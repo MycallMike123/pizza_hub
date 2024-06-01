@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
@@ -28,7 +28,6 @@ RESTAURANTS = [
     'location': 'Nairobi',
     'cuisine': 'pizza',
     'price': 'Ksh. 1500',
-    'rating': 4.5,
   },
   {
     'id': 4,
@@ -44,6 +43,11 @@ RESTAURANTS = [
 @app.route("/")
 def hello_world():
   return render_template("home.html", restaurants = RESTAURANTS)
+
+@app.route("/api/restaurants")
+def list_restaurants():
+  return jsonify(RESTAURANTS)
+
 
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)

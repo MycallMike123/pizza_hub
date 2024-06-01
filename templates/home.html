@@ -30,16 +30,17 @@
       <p class="lead">
         Each pizza at Pizza Hub is a masterpiece, made with love and an unwavering dedication to quality. Our dough is freshly prepared daily, our sauces are crafted from vine-ripened tomatoes, and our toppings are sourced from the best suppliers. Whether you're a fan of classic Margherita, crave the bold flavors of our Spicy Pepperoni, or prefer a veggie delight, we have something to satisfy every palate.
       </p>
+
+      
       <h2 class="text-center mt-2 mb-4">Available Restaurants</h2>
       <div>
         {% for restaurant in restaurants %}
-          <div>
-            {{restaurant['name']}}
-          </div>
+          {% include 'restaurants.html' %}
         {% endfor %}
       </div>
+      
       <div class="text-center">
-        <button class="btn btn-primary btn-lg">Order</button>
+        <button class="btn btn-primary btn-lg">Contact Us</button>
         <p class="mt-4">Copyright 2024 PizzaHub</p>
       </div>
     </div>
