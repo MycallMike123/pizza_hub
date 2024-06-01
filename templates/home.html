@@ -15,6 +15,7 @@
   </head>
   
   <body>
+    {% include 'navbar.html' %}
     <div class="container">
       <h1 class="text-center mt-2 mb-4">Pizza Hub</h1>
       <img class="img-fluid" id="banner" src="https://9479bbe6-0d55-4f03-b63a-ad987e036381-00-zmmcejawicgv.janeway.replit.dev/static/pizza2.jpg" height="320">
@@ -22,6 +23,7 @@
       <p class="lead">
         Welcome to Pizza Hub, where your pizza cravings meet their perfect match! At Pizza Hub, we believe that a great pizza is more than just a meal—it's an experience. Our mission is to provide a warm and inviting space for pizza lovers to come together and enjoy the flavors of their favorite toppings.
       </p>
+      
       <h2 class="text-center mt-2 mb-4">Our Story</h2>
       <p class="lead">
         Founded with a passion for creating the ultimate pizza experience, Pizza Hub has been serving mouth-watering pizzas to our community since [Year]. Our journey began with a simple goal: to craft the best pizza using only the finest ingredients and traditional recipes. Today, we continue to uphold that commitment, bringing joy to pizza lovers everywhere.
@@ -41,8 +43,8 @@
       
       <div class="text-center">
         <button class="btn btn-primary btn-lg">Contact Us</button>
-        <p class="mt-4">Copyright 2024 PizzaHub</p>
       </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
